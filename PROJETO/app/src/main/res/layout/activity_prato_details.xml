@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".restaurants.RestaurantDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+
+        <ImageView
+            android:id="@+id/imgPratoDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/imagem_do_prato_selecionado" />
+
+        <ImageView
+            android:id="@+id/imgBackPratoDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:contentDescription="@string/seta_para_voltar" />
+
+        <TextView
+            android:id="@+id/txtNomePratoDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="24dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtDescricaoPratoDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/text_color_light"
+        tools:text="@string/title_restaurant_details"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="19dp"/>
+
+</LinearLayout>

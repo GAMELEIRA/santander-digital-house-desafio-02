@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@+id/restaurantsCardView"
+    android:layout_width="match_parent"
+    android:layout_height="346dp"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <!-- Media -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="10dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cardImage"
+                android:src="@drawable/restaurant1"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/restaurant_image_description"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Title, secondary and supporting text -->
+        <TextView
+            android:id="@+id/txtCardNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/card_txtview_1"
+            android:textColor="@color/text_color_dark"
+            android:textSize="36sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/txtCardEndereco"
+            tools:text="@string/card_txtview_2"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/text_color_light"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp"
+            android:id="@+id/txtCardHorario"
+            tools:text="@string/card_txtview_3"
+            android:layout_marginStart="10dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/text_color_light"
+            />
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

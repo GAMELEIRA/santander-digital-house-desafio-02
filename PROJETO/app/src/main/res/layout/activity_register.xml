@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".register.RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="24dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtInputRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="24dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtInputRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:inputType="textEmailAddress">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="24dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtInputRegisterPassword"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/roboto"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/repeat_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="24dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtInputRegisterRepeatPassword"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/roboto"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegisterRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="23dp"
+        android:backgroundTint="@color/button_color"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/register"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:textSize="21sp"
+        app:cornerRadius="3dp" />
+    </RelativeLayout>
+
+</LinearLayout>
